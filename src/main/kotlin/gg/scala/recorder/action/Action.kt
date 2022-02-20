@@ -1,8 +1,7 @@
-package gg.scala.recorder.actions
+package gg.scala.recorder.action
 
 import net.evilblock.cubed.util.nms.MinecraftProtocol
 import net.minecraft.server.v1_8_R3.Packet
-import org.bson.ByteBuf
 import org.bukkit.entity.Player
 
 /**
@@ -13,8 +12,7 @@ abstract class Action
 {
     abstract var millisecondOffset: Int
 
-    abstract fun read(input: ByteBuf)
-    abstract fun write(output: ByteBuf)
+    abstract fun play(player: Player)
 
     protected fun sendPacket(
         target: Player, packet: Packet<*>

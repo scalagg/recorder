@@ -1,4 +1,4 @@
-package gg.scala.recorder.actions
+package gg.scala.recorder.action
 
 import gg.scala.flavor.service.Configure
 import gg.scala.flavor.service.Service
