@@ -20,6 +20,15 @@ class AnimationAction(
     private val entityId = entity.entityId
     private val animation = animation.value
 
+    override fun play(player: Player)
+    {
+        val packet = PacketPlayOutAnimation()
+        packet.field("a", entityId + ENTITY_ID_OFFSET)
+        packet.field("b", animation)
+
+        sendPacket(player, packet)
+    }
+
     enum class Animation(
         val value: Int
     )
@@ -28,14 +37,5 @@ class AnimationAction(
         EAT_FOOD(3),
         CRITICAL(4),
         MAGIC_CRITICAL(5)
-    }
-
-    override fun play(player: Player)
-    {
-        val packet = PacketPlayOutAnimation()
-        packet.field("a", entityId + ENTITY_ID_OFFSET)
-        packet.field("b", animation)
-
-        sendPacket(player, packet)
     }
 }
