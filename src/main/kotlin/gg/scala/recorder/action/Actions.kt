@@ -4,6 +4,7 @@ import gg.scala.flavor.service.Configure
 import gg.scala.flavor.service.Service
 import gg.scala.recorder.action.actions.*
 import gg.scala.recorder.action.actions.effect.EntityEffectAction
+import gg.scala.recorder.action.actions.effect.EntityEffectRemoveAction
 import kotlin.reflect.KClass
 
 /**
@@ -22,9 +23,16 @@ object Actions
         register<EntityAnimationAction>(0x0B)
         register<EntityCollectItemAction>(0x0D)
         register<EntityDestroyAction>(0x13)
-        register<EntityEffectAction>(0x1D)
         register<EntityEquipmentAction>(0x04)
         register<EntityHeadLookAction>(0x19)
+        register<EntityMetadataAction>(0x1C)
+        register<EntityStatusAction>(0x1A)
+        register<EntityTeleportAction>(0x18)
+        register<EntityVelocityAction>(0x12)
+
+        // effect actions
+        register<EntityEffectAction>(0x1D)
+        register<EntityEffectRemoveAction>(0x1E)
     }
 
     fun byId(id: Int): KClass<out Action>? = idToClass[id]
