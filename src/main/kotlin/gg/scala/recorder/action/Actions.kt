@@ -3,6 +3,7 @@ package gg.scala.recorder.action
 import gg.scala.flavor.service.Configure
 import gg.scala.flavor.service.Service
 import gg.scala.recorder.action.actions.*
+import gg.scala.recorder.action.actions.effect.EntityEffectAction
 import kotlin.reflect.KClass
 
 /**
