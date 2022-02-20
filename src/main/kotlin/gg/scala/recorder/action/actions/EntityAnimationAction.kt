@@ -3,7 +3,6 @@ package gg.scala.recorder.action.actions
 import gg.scala.recorder.ENTITY_ID_OFFSET
 import gg.scala.recorder.action.Action
 import gg.scala.recorder.field
-import net.evilblock.cubed.util.Reflection
 import net.minecraft.server.v1_8_R3.PacketPlayOutAnimation
 import org.bukkit.entity.LivingEntity
 import org.bukkit.entity.Player
@@ -12,7 +11,7 @@ import org.bukkit.entity.Player
  * @author GrowlyX
  * @since 2/19/2022
  */
-class AnimationAction(
+class EntityAnimationAction(
     entity: LivingEntity, animation: Animation,
     override var millisecondOffset: Int = -1
 ) : Action()

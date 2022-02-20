@@ -10,7 +10,7 @@ import org.bukkit.entity.Player
  * @author GrowlyX
  * @since 2/19/2022
  */
-class CollectItemAction(
+class EntityCollectItemAction(
     collected: Item, collector: Player,
     override var millisecondOffset: Int = -1
 ) : Action()
