@@ -3,7 +3,6 @@ package gg.scala.recorder.action.actions
 import gg.scala.recorder.ENTITY_ID_OFFSET
 import gg.scala.recorder.action.Action
 import net.minecraft.server.v1_8_R3.MobEffect
-import net.minecraft.server.v1_8_R3.PacketPlayOutCollect
 import net.minecraft.server.v1_8_R3.PacketPlayOutEntityEffect
 import org.bukkit.entity.LivingEntity
 import org.bukkit.entity.Player
