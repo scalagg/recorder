@@ -2,11 +2,8 @@ package gg.scala.recorder.action.actions
 
 import gg.scala.recorder.ENTITY_ID_OFFSET
 import gg.scala.recorder.action.Action
-import gg.scala.recorder.field
 import gg.scala.spigot.util.MathHelper
-import net.minecraft.server.v1_8_R3.PacketPlayOutEntityStatus
 import net.minecraft.server.v1_8_R3.PacketPlayOutEntityTeleport
-import org.bukkit.EntityEffect
 import org.bukkit.entity.Entity
 import org.bukkit.entity.Player
 

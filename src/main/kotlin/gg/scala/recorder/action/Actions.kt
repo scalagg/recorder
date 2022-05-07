@@ -29,6 +29,7 @@ object Actions
         register<EntityStatusAction>(0x1A)
         register<EntityTeleportAction>(0x18)
         register<EntityVelocityAction>(0x12)
+        register<EntityRelativeMovementAction>(0x17)
 
         // effect actions
         register<EntityEffectAction>(0x1D)
